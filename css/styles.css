@@ -4,5 +4,152 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d5d5d4;
+  font-family: "Titillium Web";
+}
+
+.container {
+  width: 30vw;
+  height: 95vh;
+  margin-top: 2vh;
+  background-color: #fffdfa;
+  border: none;
+  border-radius: 15px 15px 0 0;
+}
+
+.container .header {
+  width: 30vw;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background-size: cover;
+  background-image: url("../assets/background-2.jpg");
+  border-radius: 15px 15px 0 0;
+}
+
+.container .header .clear {
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header i {
+  margin-right: 1.5rem;
+  font-size: 20px;
+  color: #fffdfa;
+  cursor: pointer;
+}
+
+.container .header .date {
+  width: 100%;
+  height: 20px;
+  margin: 0 0 1.5rem 1rem;
+  color: #fffdfa;
+  font-size: 22px;
+}
+
+.container .content {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content #list {
+  width: 100%;
+  height: 11%;
+  margin: 0;
+  padding: 0;
+}
+
+.container .content #list li {
+  width: 100%;
+  min-height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding: 0.8rem;
+  border-bottom: 1px solid #d5d5d4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content #list li i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container .content #list li .text {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+.container .content .add-item {
+  width: 30vw;
+  height: 8%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+  position: absolute;
+  bottom: 20px;
+  border-top: 1px solid #d5d5d4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .content .add-item i {
+  color: #29495a;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.container .content .add-item input {
+  width: 100%;
+  font-size: 18px;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
 }
 /*# sourceMappingURL=styles.css.map */
