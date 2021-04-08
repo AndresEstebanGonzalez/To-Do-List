@@ -17,30 +17,37 @@ body {
 .container {
   width: 30vw;
   height: 95vh;
-  margin-top: 2vh;
+  margin-top: 5%;
   background-color: #fffdfa;
-  border: none;
   border-radius: 15px 15px 0 0;
 }
 
 .container .header {
-  width: 30vw;
-  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  width: 30vw;
+  height: 30%;
   background-size: cover;
   background-image: url("../assets/background-2.jpg");
   border-radius: 15px 15px 0 0;
 }
 
 .container .header .clear {
-  width: 100%;
-  height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,6 +57,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  width: 100%;
+  height: 4rem;
 }
 
 .container .header i {
@@ -61,43 +78,60 @@ body {
 
 .container .header .date {
   width: 100%;
-  height: 20px;
-  margin: 0 0 1.5rem 1rem;
+  height: 30px;
+  margin: 0 0 1rem 1rem;
   color: #fffdfa;
   font-size: 22px;
 }
 
 .container .content {
-  width: 100%;
-  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  width: 100%;
+  height: 70%;
 }
 
-.container .content #list {
+.container .content .list {
   width: 100%;
   height: 11%;
   margin: 0;
   padding: 0;
 }
 
-.container .content #list li {
-  width: 100%;
-  min-height: 46px;
+.container .content .list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  width: 100%;
+  min-height: 46px;
   margin: 0;
   padding: 0.8rem;
   border-bottom: 1px solid #d5d5d4;
@@ -105,12 +139,12 @@ body {
           box-sizing: border-box;
 }
 
-.container .content #list li i {
+.container .content .list li i {
   font-size: 20px;
   cursor: pointer;
 }
 
-.container .content #list li .text {
+.container .content .list li .text {
   width: 80%;
   margin: 0;
   padding: 0;
@@ -118,22 +152,29 @@ body {
 }
 
 .container .content .add-item {
-  width: 30vw;
-  height: 8%;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  width: 30vw;
+  height: 8%;
+  margin: 0;
   padding: 0.8rem;
   position: absolute;
-  bottom: 20px;
+  bottom: 13px;
   border-top: 1px solid #d5d5d4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -149,7 +190,7 @@ body {
   width: 100%;
   font-size: 18px;
   margin-left: 1rem;
-  border: none;
+  border-color: transparent;
   outline: none;
 }
 /*# sourceMappingURL=styles.css.map */
